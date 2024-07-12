@@ -5,7 +5,8 @@ import (
 )
 
 func Hello(logger logr.Logger) {
-	logger.V(1).Info("Debug: Entering Hello function")
-	logger.Info("Hello, World!")
-	logger.V(1).Info("Debug: Exiting Hello function")
+	logger.V(0).Info("Hello, World!")
+	logger.V(1).Info("This is a verbose message")
+	logger.V(2).Info("This is a very verbose message")
+	logger.V(3).Info("This is an extremely verbose message")
 }

@@ -7,8 +7,8 @@ import (
 
 var helloCmd = &cobra.Command{
 	Use:   "hello",
-	Short: "A brief description of your command",
-	Long:  `A longer description that spans multiple lines and likely contains examples and usage of using your command.`,
+	Short: "Demonstrates different verbosity levels",
+	Long:  `This command demonstrates the different verbosity levels of logging.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		logger := LoggerFrom(cmd.Context())
 		logger.Info("Running hello command")
